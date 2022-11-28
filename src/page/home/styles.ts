@@ -34,6 +34,76 @@ export const DivContainerLeft = styled.div`
     gap: 7.9rem;
 
     .logo {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+      position: relative;
+
+      select {
+        position: absolute;
+
+        top: 40px;
+        right: 40px;
+
+        color: ${theme.colors['--text-base']};
+        background-color: ${theme.colors['--background-geral']};
+        border: none;
+        padding: 0 1em 0 0;
+        margin: 0;
+
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+
+        z-index: 1;
+
+        &::-ms-expand {
+          display: none;
+        }
+
+        outline: none;
+      }
+
+      .select {
+        display: grid;
+        grid-template-areas: none;
+        align-items: center;
+        position: absolute;
+
+        select,
+        &::after {
+          grid-area: none;
+        }
+
+        /* min-width: 15ch;
+        max-width: 30ch; */
+
+        border: 2px solid ${theme.colors['--border-input']};
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+
+        font-size: 1.25rem;
+        cursor: pointer;
+        line-height: 1.1;
+
+        color: ${theme.colors['--text-base']};
+        background-color: ${theme.colors['--background-geral']};
+        /* background-image: ; */
+      }
+
+      select:focus + .focus {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border: 2px solid ${theme.colors['--focus-color']};
+        border-radius: inherit;
+      }
+
       img {
         position: absolute;
         left: 40px;
@@ -161,6 +231,8 @@ export const DivContainerLeft = styled.div`
 
         font-style: normal;
         color: ${theme.colors['--text-base']};
+
+        background: ${theme.colors['--background-geral']};
       }
 
       img,
@@ -213,6 +285,7 @@ export const DivContainerLeft = styled.div`
         /* vertical-align: sub; */
         outline: none;
         cursor: pointer;
+        background: ${theme.colors['--background-geral']};
       }
 
       input:checked {
@@ -433,6 +506,12 @@ export const DivContainerLeft = styled.div`
         img {
           position: absolute;
           left: 8px;
+          top: 40px;
+        }
+
+        select {
+          position: absolute;
+          right: 8px;
           top: 40px;
         }
       }

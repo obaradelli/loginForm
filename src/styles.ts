@@ -6,11 +6,11 @@ export const FixButton = styled.div`
     flex-direction: column;
     position: relative;
 
-    .accent {
+    /* .accent {
       position: absolute;
 
       top: 40px;
       left: 650px;
-    }
+    } */
   `}
 `
