@@ -14,6 +14,13 @@ export const GridTemplate = styled.div`
       min-height: 100%;
       height: 100%;
     }
+
+    @media (max-width: 860px) {
+      grid-template-columns: none;
+      .side-img {
+        display: none;
+      }
+    }
   `}
 `
 
@@ -24,16 +31,23 @@ export const DivContainerLeft = styled.div`
     width: 100%;
     height: 100%;
 
-    padding: 2.5rem;
     gap: 7.9rem;
 
+    .logo {
+      img {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+      }
+    }
+
     .formBackground {
-      width: 90%;
+      width: 80%;
       height: 65%;
 
       display: flex;
       flex-direction: column;
-      margin-left: 2.1875rem;
+      margin-left: 4.625rem;
 
       background: ${theme.colors['--form-background']};
     }
@@ -47,19 +61,11 @@ export const DivContainerLeft = styled.div`
 
       align-items: center;
       justify-content: center;
-      padding: 3.44rem 7.44rem;
+      padding: 5.44rem 7.44rem;
 
       img {
         width: 25px;
         height: 25px;
-      }
-
-      @media screen and (max-width: 425px) {
-        height: 100%;
-        width: 100%;
-
-        padding: 40px 20px;
-        margin-left: 0;
       }
     }
 
@@ -93,7 +99,7 @@ export const DivContainerLeft = styled.div`
 
     .titleLogin2 {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
 
       display: flex;
       flex-direction: row;
@@ -197,15 +203,26 @@ export const DivContainerLeft = styled.div`
       font-style: normal;
       color: ${theme.colors['--text-base']};
 
-      button {
-        all: unset;
+      input {
+        -webkit-appearance: none;
 
-        width: 1.125rem;
-        height: 1.125rem;
-        background: none;
-        border-radius: 4px;
+        width: 1.25rem;
+        height: 1.25rem;
         border: 1px solid ${theme.colors['--border-input']};
+        border-radius: 4px;
+        /* vertical-align: sub; */
+        outline: none;
+        cursor: pointer;
+      }
 
+      input:checked {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 1px solid ${theme.colors['--primary-color']};
+        background: ${theme.colors['--primary-color']};
+
+        border-radius: 4px;
+        outline: none;
         cursor: pointer;
       }
     }
@@ -336,30 +353,118 @@ export const DivContainerLeft = styled.div`
         }
       }
     }
+
+    @media (max-width: 1375px) {
+      .formBackground {
+        margin-left: 4.625rem;
+      }
+
+      .contentForm {
+        padding: 5.44rem 5.44rem;
+      }
+    }
+
+    @media (max-width: 1210px) {
+      .formBackground {
+        margin-left: 4.625rem;
+      }
+
+      .contentForm {
+        padding: 5.44rem 2.44rem;
+      }
+    }
+
+    @media (max-width: 1210px) {
+      .formBackground {
+        margin-left: 3.625rem;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .contentForm {
+        padding: 5.44rem 1rem;
+      }
+    }
+
+    @media (max-width: 1020px) {
+      .formBackground {
+        margin-left: 3rem;
+      }
+    }
+
+    @media (max-width: 860px) {
+      width: 100%;
+
+      .formBackground {
+        background: transparent;
+        width: 85%;
+        margin-left: 3.625rem;
+      }
+    }
+
+    @media (max-width: 715px) {
+      .formBackground {
+        width: 90%;
+        margin-left: 2.625rem;
+      }
+
+      .contentForm {
+        padding: 5.44rem 0.5rem;
+      }
+    }
+
+    @media (max-width: 690px) {
+      .formBackground {
+        width: 93%;
+        margin-left: 1.625rem;
+      }
+
+      .contentForm {
+        padding: 5.44rem 0.5rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .formBackground {
+        width: 97%;
+        margin-left: 0.5rem;
+      }
+      .logo {
+        img {
+          position: absolute;
+          left: 8px;
+          top: 40px;
+        }
+      }
+    }
+
+    @media (max-width: 355px) {
+      .formBackground {
+        width: 98%;
+        margin-left: 0.3rem;
+      }
+    }
+
+    @media (max-width: 344px) {
+      .formBackground {
+        margin-left: 0rem;
+      }
+    }
+
+    @media (max-width: 333px) {
+      min-width: 320px;
+
+      .footer2 {
+        a {
+          font-size: 0.8rem;
+        }
+      }
+
+      .footer1 {
+        footer {
+          font-size: 0.8rem;
+        }
+      }
+    }
   `}
 `
-
-// p.textCompleted {
-//   color: var(--gray-300);
-//   text-decoration: line-through;
-// }
-
-// .checkContainer {
-//   width: 1.125rem;
-//   height: 1.125rem;
-//   background: none;
-//   border: none;
-// }
-
-// .checkContainer div {
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 999px;
-//   border: 2px solid var(--blue);
-// }
-
-// .checkContainer svg {
-//   width: 100%;
-//   height: 100%;
-//   color: var(--purple);
-// }

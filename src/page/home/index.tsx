@@ -4,6 +4,7 @@ import logo from '../../assets/logo.svg'
 import logIn from '../../assets/logIn.svg'
 import mail from '../../assets/mail.svg'
 import lock from '../../assets/lock.svg'
+import eye from '../../assets/eye.svg'
 
 import sideImage from '../../assets/sideImage.png'
 
@@ -11,7 +12,7 @@ export function Home() {
   return (
     <GridTemplate>
       <DivContainerLeft>
-        <div>
+        <div className="logo">
           <img src={logo} />
         </div>
 
@@ -29,19 +30,24 @@ export function Home() {
               <form className="formLogin1">
                 <div className="inputs">
                   <label>E-mail</label>
-                  <input type="text" placeholder="Digite seu e-mail"></input>
+                  <input type="email" placeholder="Digite seu e-mail"></input>
                   <img src={mail} />
                 </div>
 
                 <div className="inputs">
                   <label>Senha</label>
-                  <input type="text" placeholder="Digite sua senha"></input>
-                  <img src={lock} />
+                  <input type="password" placeholder="Digite sua senha"></input>
+                  <img src={lock} className="lock" />
                 </div>
 
                 <div className="footer">
                   <div className="footer1">
-                    <button></button>
+                    <input
+                      className="checkbox"
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox"
+                    ></input>
                     <footer>Lembre-se</footer>
                   </div>
                   <footer className="footer2">
