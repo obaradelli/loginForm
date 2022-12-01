@@ -111,27 +111,42 @@ export const DivContainerLeft = styled.div`
       }
     }
 
+    .divGeral {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
     .formBackground {
       width: 80%;
-      height: 65%;
+      height: 70%;
 
       display: flex;
       flex-direction: column;
-      margin-left: 4.625rem;
 
       background: ${theme.colors['--form-background']};
     }
 
-    .contentForm {
+    .divGeral2 {
+      display: flex;
       width: 100%;
       height: 100%;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contentForm {
+      width: 100%;
 
       display: flex;
       flex-direction: column;
 
       align-items: center;
       justify-content: center;
-      padding: 5.44rem 7.44rem;
+      padding: 0 7.44rem;
 
       img {
         width: 25px;
@@ -144,7 +159,6 @@ export const DivContainerLeft = styled.div`
       flex-direction: column;
 
       width: 100%;
-      height: 100%;
 
       h1 {
         font-family: ${theme.fontFamily.Poppins};
@@ -169,7 +183,6 @@ export const DivContainerLeft = styled.div`
 
     .titleLogin2 {
       width: 100%;
-      /* height: 100%; */
 
       display: flex;
       flex-direction: row;
@@ -180,7 +193,6 @@ export const DivContainerLeft = styled.div`
 
     .formLogin {
       width: 100%;
-      height: 100%;
 
       display: flex;
       flex-direction: column;
@@ -188,7 +200,6 @@ export const DivContainerLeft = styled.div`
 
     .formLogin1 {
       width: 100%;
-      height: 100%;
 
       display: flex;
 
@@ -200,7 +211,6 @@ export const DivContainerLeft = styled.div`
 
     .inputs {
       width: 100%;
-      height: 100%;
 
       display: flex;
       flex-direction: column;
@@ -251,7 +261,6 @@ export const DivContainerLeft = styled.div`
 
     .footer {
       width: 100%;
-      height: 100%;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -259,7 +268,7 @@ export const DivContainerLeft = styled.div`
 
     .footer1 {
       width: 100%;
-      height: 100%;
+
       display: flex;
       flex-direction: row;
 
@@ -302,7 +311,7 @@ export const DivContainerLeft = styled.div`
 
     .footer2 {
       width: 100%;
-      height: 100%;
+
       display: flex;
 
       align-items: flex-end;
@@ -338,7 +347,6 @@ export const DivContainerLeft = styled.div`
       flex-direction: column;
 
       width: 100%;
-      height: 100%;
 
       justify-content: center;
       align-items: center;
@@ -373,7 +381,6 @@ export const DivContainerLeft = styled.div`
       flex-direction: column;
 
       width: 100%;
-      height: 100%;
 
       justify-content: center;
       align-items: center;
@@ -429,39 +436,35 @@ export const DivContainerLeft = styled.div`
 
     @media (max-width: 1375px) {
       .formBackground {
-        margin-left: 4.625rem;
       }
 
       .contentForm {
-        padding: 5.44rem 5.44rem;
+        padding: 0rem 5.44rem;
       }
     }
 
     @media (max-width: 1210px) {
       .formBackground {
-        margin-left: 4.625rem;
       }
 
       .contentForm {
-        padding: 5.44rem 2.44rem;
+        padding: 0rem 2.44rem;
       }
     }
 
     @media (max-width: 1210px) {
       .formBackground {
-        margin-left: 3.625rem;
       }
     }
 
     @media (max-width: 1100px) {
       .contentForm {
-        padding: 5.44rem 1rem;
+        padding: 0rem 1rem;
       }
     }
 
     @media (max-width: 1020px) {
       .formBackground {
-        margin-left: 3rem;
       }
     }
 
@@ -471,14 +474,12 @@ export const DivContainerLeft = styled.div`
       .formBackground {
         background: transparent;
         width: 85%;
-        margin-left: 3.625rem;
       }
     }
 
     @media (max-width: 715px) {
       .formBackground {
         width: 90%;
-        margin-left: 2.625rem;
       }
 
       .contentForm {
@@ -489,7 +490,6 @@ export const DivContainerLeft = styled.div`
     @media (max-width: 690px) {
       .formBackground {
         width: 93%;
-        margin-left: 1.625rem;
       }
 
       .contentForm {
@@ -500,7 +500,6 @@ export const DivContainerLeft = styled.div`
     @media (max-width: 550px) {
       .formBackground {
         width: 97%;
-        margin-left: 0.5rem;
       }
       .logo {
         img {
@@ -520,13 +519,11 @@ export const DivContainerLeft = styled.div`
     @media (max-width: 355px) {
       .formBackground {
         width: 98%;
-        margin-left: 0.3rem;
       }
     }
 
     @media (max-width: 344px) {
       .formBackground {
-        margin-left: 0rem;
       }
     }
 

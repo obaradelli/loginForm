@@ -116,55 +116,65 @@ export function Home({ theme, setTheme }: HomeProps) {
           </select>
         </div>
 
-        <div className="formBackground">
-          <div className="contentForm">
-            <div className="titleLogin">
-              <div className="titleLogin2">
-                <img src={getLogIn()} />
-                <h1>Faça seu login</h1>
-              </div>
-              <span>Entre com suas informações de cadastro.</span>
-            </div>
-
-            <div className="formLogin">
-              <form className="formLogin1">
-                <div className="inputs">
-                  <label>E-mail</label>
-                  <input type="email" placeholder="Digite seu e-mail"></input>
-                  <img src={getMail()} />
-                </div>
-
-                <div className="inputs">
-                  <label>Senha</label>
-                  <input type="password" placeholder="Digite sua senha"></input>
-                  <img src={getLock()} className="lock" />
-                </div>
-
-                <div className="footer">
-                  <div className="footer1">
-                    <input
-                      className="checkbox"
-                      type="checkbox"
-                      name="checkbox"
-                      id="checkbox"
-                    ></input>
-                    <footer>Lembre-me</footer>
+        <div className="divGeral">
+          <div className="formBackground">
+            <div className="divGeral2">
+              <div className="contentForm">
+                <div className="titleLogin">
+                  <div className="titleLogin2">
+                    <img src={getLogIn()} />
+                    <h1>Faça seu login</h1>
                   </div>
-                  <footer className="footer2">
-                    <a href="#"> Esqueci minha senha</a>
-                  </footer>
+                  <span>Entre com suas informações de cadastro.</span>
                 </div>
 
-                <div className="gapLastFooter">
-                  <footer className="gapLastFooter2">
-                    <button>ENTRAR</button>
-                  </footer>
+                <div className="formLogin">
+                  <form className="formLogin1">
+                    <div className="inputs">
+                      <label>E-mail</label>
+                      <input
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                      ></input>
+                      <img src={getMail()} />
+                    </div>
 
-                  <footer className="lastFooter">
-                    Não tem uma conta? <a href="#">Registre-se</a>
-                  </footer>
+                    <div className="inputs">
+                      <label>Senha</label>
+                      <input
+                        type="password"
+                        placeholder="Digite sua senha"
+                      ></input>
+                      <img src={getLock()} className="lock" />
+                    </div>
+
+                    <div className="footer">
+                      <div className="footer1">
+                        <input
+                          className="checkbox"
+                          type="checkbox"
+                          name="checkbox"
+                          id="checkbox"
+                        ></input>
+                        <footer>Lembre-me</footer>
+                      </div>
+                      <footer className="footer2">
+                        <a href="#"> Esqueci minha senha</a>
+                      </footer>
+                    </div>
+
+                    <div className="gapLastFooter">
+                      <footer className="gapLastFooter2">
+                        <button>ENTRAR</button>
+                      </footer>
+
+                      <footer className="lastFooter">
+                        Não tem uma conta? <a href="#">Registre-se</a>
+                      </footer>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
