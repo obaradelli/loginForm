@@ -41,6 +41,12 @@ export const DivContainerLeft = styled.div`
 
       position: relative;
 
+      img {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+      }
+
       select {
         position: absolute;
 
@@ -65,6 +71,7 @@ export const DivContainerLeft = styled.div`
         }
 
         outline: none;
+      }
       }
 
       .select {
@@ -102,14 +109,13 @@ export const DivContainerLeft = styled.div`
         bottom: -1px;
         border: 2px solid ${theme.colors['--focus-color']};
         border-radius: inherit;
-      }
+             }
+      
 
-      img {
-        position: absolute;
-        left: 40px;
-        top: 40px;
-      }
+ 
     }
+
+
 
     .divGeral {
       display: flex;

@@ -100,7 +100,7 @@ export function Home({ theme, setTheme }: HomeProps) {
     <GridTemplate>
       <DivContainerLeft>
         <div className="logo">
-          <img src={getLogo()} />
+          <img src={getLogo()} className="imgLogo" />
           <select
             className="select"
             name=""
